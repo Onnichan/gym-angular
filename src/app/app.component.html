@@ -1,6 +1,6 @@
 <div *ngIf="usuario && !cargando;else showlogin">
   <h1>Hello {{usuario.email}} prro</h1>
-  <button (click)="logout">logout</button>
+  <button (click)="logout()">logout</button>
 </div>
 <ng-template #showlogin>
   <div *ngIf="cargando" class="text-center"> 
