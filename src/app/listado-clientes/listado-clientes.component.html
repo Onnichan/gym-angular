@@ -1,0 +1,53 @@
+<div class="container mt-5">
+	<h4>Listado de clientes</h4>
+	
+	<form action="">
+		<div class="form-group">
+			<input type="text"  class="form-control" id="buscador" placeholder="Buscar un cliente">
+		</div>
+	</form>
+
+	<div class="row">
+		<div class="col-sm-3" *ngFor="let cliente of clientes">
+			<div class="card">
+				<img class="card-img-top text-center" style=" width: 150px;height: 150px;border-radius:50%;background-color: rgb(211, 52, 12);" [src]="cliente.imgUrl">
+				<div class="card-body">
+					<h3>{{cliente.id}}</h3>
+					<h5 class="card-title">{{cliente.nombre}} {{cliente.apellido}}</h5>
+					<a href="" class="card-link">Editar</a>
+					<a href="" class="card-link text-danger">Desactivar</a>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="col-sm-3">
+			<div class="card">
+				<img class="card-img-top text-center" style=" width: 150px;height: 150px;border-radius:50%;background-color: rgb(211, 52, 12);" src="../../assets/users/dante.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Dante</h5>
+					<a href="" class="card-link">Editar</a>
+					<a href="" class="card-link text-danger">Desactivar</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="card">
+				<img class="card-img-top text-center" style=" width: 150px;height: 150px;border-radius:50%;background-color: rgb(211, 52, 12);" src="../../assets/users/dante.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Dante</h5>
+					<a href="" class="card-link">Editar</a>
+					<a href="" class="card-link text-danger">Desactivar</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="card">
+				<img class="card-img-top text-center" style=" width: 150px;height: 150px;border-radius:50%;background-color: rgb(211, 52, 12);" src="../../assets/users/dante.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Dante</h5>
+					<a href="" class="card-link">Editar</a>
+					<a href="" class="card-link text-danger">Desactivar</a>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</div>
