@@ -4,13 +4,15 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule} from '@angular/fire';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { AngularFirestoreModule} from '@angular/fire/firestore';
+
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { LoginComponent } from './login/login.component';
-// import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
-import { AngularFirestoreModule} from '@angular/fire/firestore';
 import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.component';
  
 
@@ -28,9 +30,10 @@ import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.compo
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     NgxSpinnerModule,
+    ProgressbarModule.forRoot(),
     FormsModule,
-    AngularFirestoreModule
-    // BrowserAnimationsModule
+    AngularFirestoreModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
