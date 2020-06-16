@@ -7,7 +7,8 @@ import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.compo
 const routes: Routes = [
   // { path: '/',component:}
   { path: 'listado-clientes',component: ListadoClientesComponent},
-  { path: 'agregar-clientes',component: AgregarClienteComponent}
+  { path: 'agregar-clientes',component: AgregarClienteComponent},
+  { path: 'agregar-clientes/:clienteID',component: AgregarClienteComponent}
 ];
 
 @NgModule({
